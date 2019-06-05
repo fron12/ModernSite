@@ -15,12 +15,12 @@ function App() {
         </div>
       </header>
       <section className="dropdown-categories">
-        <a>About on Q <FontAwesomeIcon icon={faAngleDown} /></a>
-        <a>Home Loans <FontAwesomeIcon icon={faAngleDown} /></a>
-        <a>Financial Tools <FontAwesomeIcon icon={faAngleDown} /></a>
-        <a>Mortage Education <FontAwesomeIcon icon={faAngleDown} /></a>
-        <a>Mortage News</a>
-        <a><FontAwesomeIcon icon={faGlobe} /> EN <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a href="*">About on Q <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a href="*">Home Loans <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a href="*">Financial Tools <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a href="*">Mortage Education <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a href="*">Mortage News</a>
+        <a href="*"><FontAwesomeIcon icon={faGlobe} /> EN <FontAwesomeIcon icon={faAngleDown} /></a>
       </section>
     </div>
   );
