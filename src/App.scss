@@ -4,7 +4,7 @@
 $font-size: 18px;
 
 .top-header {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -26,4 +26,15 @@ $font-size: 18px;
   padding-right: 30px;
   display: flex;
   align-items: center;
+}
+
+.dropdown-categories {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-carat::after {
+  content: "3";
+  font-family: ETmodules;
 }
