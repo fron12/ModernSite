@@ -1,0 +1,35 @@
+$colors: (blue: #009ddc, orange: #e8941a);
+
+@each $key, $color in $colors  {
+    .#{$key}-button { background-color: $color}
+}
+
+.button-properties {
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 50px;
+    padding: 0 19px;
+}
+
+.button-properties:first-child {
+    margin-right: 15px;
+}
+
+.orange-button {
+    padding-left: 60px;
+}
+
+.orange-button::before {
+    content: "";
+    background-image: url(https://onqfinancial.com/wp-content/uploads/2017/06/location-icon-white.svg);
+    background-size: 17px 21px;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 24px;
+    position: absolute;
+    right: 200px;
+    top: 35px;
+    display: inline-block;
+}
