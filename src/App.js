@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown, faGlobe } from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
   return (
@@ -11,9 +14,14 @@ function App() {
           <div className="orange-button button-properties">Find a Location</div>
         </div>
       </header>
-      <div className="dropdown-categories">
-        
-      </div>
+      <section className="dropdown-categories">
+        <a>About on Q <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a>Home Loans <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a>Financial Tools <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a>Mortage Education <FontAwesomeIcon icon={faAngleDown} /></a>
+        <a>Mortage News</a>
+        <a><FontAwesomeIcon icon={faGlobe} /> EN <FontAwesomeIcon icon={faAngleDown} /></a>
+      </section>
     </div>
   );
 }
