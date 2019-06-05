@@ -9,7 +9,7 @@ $font-size: 18px;
   justify-content: space-between;
   width: 100%;
   height: 90px;
-  @include box-shadow(2px, 2px, 2px, rgba(240, 240, 240, 0.8));
+  @include box-shadow(2px 2px 2px rgba(240, 240, 240, 0.8));
   font-size: $font-size;
   background-color: #ffffff;
 }
@@ -32,9 +32,4 @@ $font-size: 18px;
   margin: 30px 0;
   display: flex;
   justify-content: space-around;
-}
-
-.dropdown-carat::after {
-  content: "3";
-  font-family: ETmodules;
 }
