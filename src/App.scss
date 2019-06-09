@@ -37,7 +37,6 @@ $font-size: 18px;
 }
 
 .dropdown-categories {
-  padding: 30px 0;
   position: sticky;
   top: 90px;
   width: 100%;
@@ -47,12 +46,13 @@ $font-size: 18px;
   background-color: #faf9f9;
   transition: 0.2s;
   border-bottom: 1px solid rgb(218, 214, 214);
+  z-index: 99;
 }
 
 .dropdown-main {
   text-decoration: none;
   color: rgba(0,0,0,.6);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600
 }
 
@@ -67,27 +67,57 @@ $font-size: 18px;
   color: rgb(189, 184, 184);
 }
 
-.couch-with-bulldog {
+.main-content {
   // position: relative;
   // top: 180px;
   height: 400px;
+}
+
+.couch-with-bulldog {
+  width: 100%;
+  position: absolute;
+  height: 455px;
   background-position: center left;
   background-image: url(https://d3v5ezchayoty7.cloudfront.net/wp-content/uploads/2018/01/03232321/Couple_On_Couch_with_Bulldog-2.jpg);
   background-size: cover;
+  z-index: -100;
+  opacity: 0.55;
 }
 
 .image-words {
-  position: relative;
-  left: 270px;
+  position: absolute;
+  right: 13.6%;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  padding-top: 100px;
-  width: 500px;
-  border: 1px solid red;
+  padding-top: 5px;
+}
+
+.mortgages-simplified {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 58px 0 -14px 0;
+  line-height: 1.2;
+  // letter-spacing: 1px;
+}
+
+.get-prequalified {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.image-words-color {
+  color: #4d4d4d;
 }
 
 .image-button-group {
   display: flex;
   flex-direction: row;
+  font-size: 30;
+}
+
+.score-group {
+  height: 100px;
 }
