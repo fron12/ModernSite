@@ -17,6 +17,19 @@ $colors: (blue: #009ddc, orange: #e8941a);
     margin-right: 15px;
 }
 
+.image-button-properties {
+    @extend .button-properties;
+    width: 200px;
+    height: 58px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 58px;
+}
+
+.image-button-properties:first-child {
+    margin-right: 30px;
+}
+
 .orange-button {
     padding-left: 60px;
 }
