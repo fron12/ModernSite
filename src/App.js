@@ -20,13 +20,16 @@ class App extends Component {
 
   scrollHandler = () => {
     let style = document.getElementsByClassName("dropdown-categories")[0].style;
+    let fastyle = document.getElementsByClassName("fa-search")[0].style;
     if(document.body.scroll > 120 || document.documentElement.scrollTop > 120){
       style.height = "57px";
       style.lineHeight = "57px";
+      fastyle.marginTop = "20px";
     }
     else{
       style.height = "77px";
       style.lineHeight = "77px";
+      fastyle.marginTop = "29px";
     }
   }
 
@@ -70,7 +73,37 @@ class App extends Component {
       </section>
       <section className="review-scores">
         <div className="score-group">
-          <img src="https://d3v5ezchayoty7.cloudfront.net/wp-content/uploads/2017/04/03230746/Google_Widget_v3-07.png" alt="google review" />
+          <a href="*"> 
+            <img className="review-image" src="https://d3v5ezchayoty7.cloudfront.net/wp-content/uploads/2017/04/03230746/Google_Widget_v3-07.png" alt="google review" />
+          </a>
+          <a href="*">
+            <img className="review-image" src="https://d3v5ezchayoty7.cloudfront.net/wp-content/uploads/2017/04/03230759/Google_Widget_v3-08.png" alt="zillow review" />
+          </a>
+        </div>
+      </section>
+      <section className="blurb-section">
+        <h2 className="blurb-question">What can we help you with today?</h2>
+        <div className="blurb-columns">
+          <div className="blurb">
+            <div className="blurb-top">
+              <h4><a className="blurb-title" href="*">Refinance Your Home</a></h4>
+              <p className="blurb-text">Are you considering refinancing your home loan to reduce your monthly payment, borrowing against your equity, or simply switching to an adjustable or fixed rate loan? Whatever your goals, we offer a variety of options to help.</p>
+            </div>
+            <div className="blurb-bottom">
+              <h4><a className="blurb-title" href="*">Mortgage Calculator</a></h4>
+              <p className="blurb-text">Use our mortgage payment calculator to find out your housing affordability, estimate your monthly mortgage payments, and more. Just enter in a few specifics about the home you’re interested in and we can show you information that will help you make an informed financial decision.</p>
+            </div>
+          </div>
+          <div className="blurb">
+            <div className="blurb-top">
+              <h4><a className="blurb-title" href="*">First Time Home Buyer?</a></h4>
+              <p className="blurb-text">Buying your first home is exciting and one of the biggest financial decisions you’ll ever make. We can help you get prequalified for a first time home buyer loan program, knowing what you can comfortably afford. We’ll advise you on grants and programs available to first time home buyers and make your home buying experience a great one.</p>
+            </div>
+            <div className="blurb-bottom">
+              <h4><a className="blurb-title" href="*">Home Loan Options</a></h4>
+              <p className="blurb-text">Learn more about all of the mortgage options available to you, whether you’re a veteran looking to take advantage of a VA home loan or looking for down payment assistance programs – we have a number of home loan programs available.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
