@@ -21,12 +21,12 @@ class App extends Component {
   scrollHandler = () => {
     let style = document.getElementsByClassName("dropdown-categories")[0].style;
     let fastyle = document.getElementsByClassName("fa-search")[0].style;
-    if(document.body.scroll > 120 || document.documentElement.scrollTop > 120){
+    if(document.body.scroll >= 50 || document.documentElement.scrollTop >= 50){
       style.height = "57px";
       style.lineHeight = "57px";
       fastyle.marginTop = "20px";
     }
-    else{
+    else if (document.body.scroll <= 30 || document.documentElement.scrollTop <= 30){
       style.height = "77px";
       style.lineHeight = "77px";
       fastyle.marginTop = "29px";
@@ -105,6 +105,9 @@ class App extends Component {
             </div>
           </div>
         </div>
+      </section>
+      <section className="video">
+        <iframe src="https://player.vimeo.com/video/302160846?dnt=1&app_id=122963" width="320" height="240" title="On-Q-Video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </section>
     </div>
   );
