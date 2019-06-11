@@ -1,5 +1,5 @@
 .blurb-section {
-    padding: 75px 400px 0;
+    padding: 75px 400px 0 415px;
 }
 
 .blurb-question {
@@ -12,11 +12,12 @@
 }
 
 .blurb {
-
+    width: 510px;
 }
 
 .blurb-top {
     height: 200px;
+    margin-bottom: 0px;
 }
 
 h4 {
@@ -32,14 +33,15 @@ h4 {
 }
 
 .blurb-bottom {
-
+    margin-top: 40px;
 }
 
 .blurb:first-child {
-    margin-right: 90px;
+    margin-right: 60px;
 }
 
 .blurb-text {
     font-size: 1.6em;
     color: #636466;
+    line-height: 1.6em;
 }
