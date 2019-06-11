@@ -1,0 +1,13 @@
+.video  {
+    width: 1088px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.video iframe {
+    border: none;
+    width: calc(177.78vh);
+    height: calc(56.25vw);
+}
